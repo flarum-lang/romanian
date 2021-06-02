@@ -1,0 +1,37 @@
+flarum-mentions:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the composer (reply autocompletion function).
+    composer:
+      mention_tooltip: Menționare utilizator sau răspuns
+      reply_to_post_text: "Răspunde la #{number}"
+
+    # These translations are used by the Notifications dropdown, a.k.a. "the bell".
+    notifications:
+      others_text: => core.ref.some_others
+      post_mentioned_text: "{username} a răspuns la postarea Dvs."
+      user_mentioned_text: "{username} v-a menționat"
+
+    # These translations are displayed beneath individual posts.
+    post:
+      mentioned_by_self_text: "{users} a răspuns la asta.|{users} au răspuns la asta."                        # Can be pluralized to agree with the number of users!
+      mentioned_by_text: "{users} a răspuns la asta.|{users} au răspuns la asta."  # Can be pluralized to agree with the number of users!
+      others_text: => core.ref.some_others
+      quote_button: Citat
+      reply_link: => core.ref.reply
+      you_text: => core.ref.you
+
+    # These translations are used in the Settings page.
+    settings:
+      notify_post_mentioned_label: Cineva răspune la una din postările mele
+      notify_user_mentioned_label: Cineva mă menționează într-o postare
+
+    # These translations are used in the user profile page and profile popup.
+    user:
+      mentions_link: Menționări

@@ -1,0 +1,59 @@
+flarum-subscriptions:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are displayed as tooltips for discussion badges.
+    badge:
+      following_tooltip: => flarum-subscriptions.ref.following
+      ignoring_tooltip: => flarum-subscriptions.ref.ignoring
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      follow_button: => flarum-subscriptions.ref.follow
+      unfollow_button: Dezabonare
+      unignore_button: Nu mai ignorați
+
+    # These translations are used on the index page, peripheral to the discussion list.
+    index:
+      following_link: Abonări
+
+    # These translations are used by the Notifications dropdown, a.k.a. "the bell".
+    notifications:
+      new_post_text: "{username} a postat ceva"
+
+    # These translations are used in the Settings page.
+    settings:
+      follow_after_reply_label: => flarum-subscriptions.ref.follow_after_reply_label
+      notify_new_post_label: => flarum-subscriptions.ref.notify_new_post_label
+
+    # These translations are used in the subscription menu displayed to the right of the post stream.
+    sub_controls:
+      follow_button: => flarum-subscriptions.ref.follow
+      following_button: => flarum-subscriptions.ref.following
+      following_text: Notificați-mi oridecâteori se răspunde.
+      ignoring_button: => flarum-subscriptions.ref.ignoring
+      ignoring_text: => flarum-subscriptions.ref.ignoring_text
+      not_following_button: Neabonat
+      not_following_text: "Notificați-mi doar când sunt @menționat."
+      notify_alert_tooltip: Primiți o notificare atunci când apar postări noi
+      notify_email_tooltip: Primiți un e-mail atunci când apar postări noi
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    follow: Abonare
+    following: Abonat
+    ignoring: Ignorare
+
+    # More modificable visual elements
+    follow_after_reply_label: Urmăriți automat discuțiile la care răspund
+    notify_new_post_label: Cineva răspunde într-o discuție la care sunt abonat
+    ignoring_text: Nu mă notificați niciodată. Ascundeți din lista de discuții.

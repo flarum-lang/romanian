@@ -147,7 +147,7 @@ core:
       basics_title: => core.admin.basics.description
       categories:
         authentication: "Autentificare"
-        core: "De bază"
+        core: "Configurări de bază"
         discussion: "Discuție"
         feature: "Features"
         formatting: "Formatare"
@@ -197,50 +197,69 @@ core:
       view_post_ips_label: "Vizualizarea adreselor IP ale postărilor"
 
     # These translations are used in the dropdown menus on the Permissions page.
-    permissions_controls:
-      everyone_button: Oricine
+    permissions_controls: #-4
+      allow_indefinitely_button: "Pe o durată nedefinită"
+      allow_some_minutes_button: "{count, plural, one {Timp de # minut} other {Timp de # minute}}"
+      allow_ten_minutes_button: "Timp de 10 minute"
+      allow_until_reply_button: "Până la următorul răspuns"
+      everyone_button: "Oricine"
       members_button: => core.group.members
-      signup_open_button: Deschisă
-      signup_closed_button: Închisă
-      allow_indefinitely_button: Pe o durată nedefinită
-      allow_ten_minutes_button: Pentru 10 minute
-      allow_until_reply_button: Până la următorul răspuns
-      allow_some_minutes_button: "Pentru {count} minut|Pentru {count} minute"
+      signup_closed_button: "Închisă"
+      signup_open_button: "Deschisă"
       
-
-    
-    
-
-    
-    # These translations are used in the Extensions page.
-    extensions: #-6
-      add_button: Adăugare extensie
-      disable_button: Dezactivare
-      enable_button: Activare
-      settings_button: => core.ref.settings
-      uninstall_button: Dezinstalare
-    
-    # These translations are used in the placeholder Add Extension modal dialog.
-    add_extension:
-      title: Adăugare extensie
-
-      temporary_text: "Într-o zi, într-un viitor foarte apropiat, acest dialog vă va permite să adăugați o extensie la forumului Dvs. cu ușurință. Creăm plataforma chiar în acest moment!"
-      install_text: "Între timp, puteți găsi extensii pe <a>Flarum.org</a> și le puteți instala prin Composer."
-      developer_text: "Dacă sunteți dezvoltator, puteți <a>să citiți documentația</a> și să încercați să creați propriile extensii."
-      
-
-
-    # These translations are used in the Settings modal dialog.
+    # These translations are used generically in setting fields.
     settings:
+      saved_message: "Modificările Dvs. au fost salvate."
       submit_button: => core.ref.save_changes
-    
+
     # These translations are used in image upload buttons.
     upload_image:
-      remove_button: Ștergeți imaginea
-      upload_button: Alegeți imaginea
+      remove_button: "Ștergere imagine"
+      upload_button: "Selectare imagine"
+    
+    # These translations are used for the users list on the admin dashboard.
+    users:
+      description: "O listă a tuturor utilizatorilor de pe forumul Dvs."
+
+      grid:
+        columns:
+          edit_user:
+            button: => core.ref.edit
+            title: => core.ref.edit_user
+            tooltip: "Editare {username}"
+
+          email:
+            title: => core.ref.email
+            visibility_hide: "Ascundere adresă de e-mail"
+            visibility_show: "Afișare adresă de e-mail"
+
+          group_badges:
+            no_badges: "Membru"
+            title: "Grupuri"
+
+          join_time:
+            title: "S-a alăturat la"
+
+          user_id:
+            title: "ID"
+
+          username:
+            profile_link_tooltip: "Vizitare profil {username}"
+            title: => core.ref.username
+
+        invalid_column_content: "Nevalid"
+
+      pagination:
+        back_button: "Pagina precedentă"
+        next_button: "Pagina următoare"
+        page_counter: "Pagina {current} din {total}"
+
+      title: => core.ref.users
+      total_users: "Numărul total de utilizatori: {count}"
 
   # Translations in this namespace are used by the forum user interface.
   forum:
+  
     # These translations are used in the Change Email modal dialog.
     change_email:
       title: => core.ref.change_email
@@ -601,6 +620,7 @@ core:
     delete: Ștergere
     delete_forever: Ștergere definitivă
     edit: Editare
+    edit_user: Editare utilizator
     email: "E-mail"
     load_more: Mai multe...
     log_in: Conectare

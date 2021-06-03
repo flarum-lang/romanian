@@ -492,43 +492,53 @@ core:
 
     # These translations are displayed as tooltips for discussion badges.
     badge:
-      hidden_tooltip: Ascuns
-      
+      hidden_tooltip: "Ascuns"
+
+    # These translations are used in the dropdown component.
+    dropdown:
+      toggle_dropdown_accessible_label: "Comutare meniul derulant"
+
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
-      activate_button: Activare utilizator
+      activate_button: "Activare utilizator"
       email_heading: => core.ref.email
       email_label: => core.ref.email
-      groups_heading: Grupuri
+      groups_heading: "Grupuri"
       password_heading: => core.ref.password
       password_label: => core.ref.password
-      set_password_label: Setare parolă nouă
+      set_password_label: "Setare parolă nouă"
       submit_button: => core.ref.save_changes
-      title: Editare utilizator
+      title: => core.ref.edit_user
       username_heading: => core.ref.username
       username_label: => core.ref.username
 
-    # These translations are used to modify usernames.
-    username:
-      deleted_text: "[șters]"
-
     # These translations are displayed as error messages.
     error:
-      generic_message: "Hopa! Ceva nu e în regulă. Vă rugăm, încărcați pagina din nou (F5)."
-      not_found_message: Resursa solicitată nu a fost găsită.
-      permission_denied_message: Nu aveți permisiunea de a face acest lucru.
-      rate_limit_exceeded_message: Faceți totul prea rapid. Așteptați câteva secunde, vă rugăm.
+      dependent_extensions_message: "Extensia {extension} nu poate fi dezactivată până când următoarele extensii dependente sunt activate: {extensions}"
+      generic_message: "Hopa! Ceva nu a mers. Vă rugăm, încărcați pagina din nou (F5) și încercați din nou."
+      missing_dependencies_message: "Extensia {extension} nu poate fi activată până când următoarele dependențe sunt dezactivate: {extensions}"
+      not_found_message: "Resursa solicitată nu a fost găsită."
+      permission_denied_message: "Nu aveți permisiunea de a face acest lucru."
+      rate_limit_exceeded_message: "Faceți totul prea rapid. Vă rugăm, încercați din nou peste câteva secunde."
+    
+    # These translations are used in the loading indicator component.
+    loading_indicator:
+      accessible_label: => core.ref.loading
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
-      kilo_text: K
-      mega_text: M
-
+      kilo_text: "K"
+      mega_text: "M"
+      
     # These translations are used to punctuate a series of items.
     series:
       glue_text: ", "
       three_text: "{first}, {second} și {third}"
       two_text: "{first} și {second}"
+
+    # These translations are used to modify usernames.
+    username:
+      deleted_text: "[șters]"
 
   # Translations in this namespace are used in views other than Flarum's normal JS client.
   views:
@@ -631,6 +641,7 @@ core:
     edit_user: "Editare utilizator"
     email: "E-mail"
     load_more: "Mai multe..."
+    loading: "Se încarcă..."
     log_in: "Conectare"
     log_out: "Deconectare"
     mark_all_as_read: "Marcare toate ca citite"

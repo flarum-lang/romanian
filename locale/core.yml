@@ -250,8 +250,8 @@ core:
         invalid_column_content: "Nevalid"
 
       pagination:
-        back_button: "Pagina precedentă"
-        next_button: "Pagina următoare"
+        back_button: => core.ref.previous_page
+        next_button: => core.ref.next_page
         page_counter: "Pagina {current} din {total}"
 
       title: => core.ref.users
@@ -545,31 +545,31 @@ core:
 
     # Translations in this namespace are displayed by the basic HTML content loader.
     content:
-      javascript_disabled_message: Acest site se vede cel mai bine într-un navigator modern cu JavaScript activat.
-      load_error_message: A avut loc o eroare în timp ce se încerca încărcarea completă a acestui site.
-      loading_text: Se încarcă…
+      javascript_disabled_message: "Acest site se afișează cel mai bine într-un navigator modern cu JavaScript activat."
+      load_error_message: "A avut loc o eroare în timp ce se încerca încărcarea completă a acestui site. Încercați să actualizați pagina."
+      loading_text: => core.ref.loading
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
     discussion:
       next_page_button: => core.ref.next_page
-      previous_page_button: Pagina anterioară
+      previous_page_button: => core.ref.previous_page
 
     # Translations in this namespace are displayed when Flarum encounters an error.
     error:
-      csrf_token_mismatch: Sunteți inactiv de prea mult timp.
-      csrf_token_mismatch_return_link: Întoarce-te pentru a încerca din nou
-      invalid_confirmation_token: Acest link de confirmare a fost deja utilizat sau este nevalid.
-      not_authenticated: Nu aveți permisiunea de a accesa această pagină. Încercați din nou după conectare.
-      not_found: Pagina pe care ați solicitat-o nu a putut fi găsită.
-      not_found_return_link: "Întorceți-vă la {forum}"
-      permission_denied: Nu aveți permisiunea de a accesa această pagină.
-      unknown: A apărut o eroare la încercarea de încărcare a acestei pagini.
+      csrf_token_mismatch: "Ați fost inactiv de prea mult timp."
+      csrf_token_mismatch_return_link: "Mergeți înapoi, pentru a încerca din nou"
+      invalid_confirmation_token: "Acest link de confirmare a fost deja utilizat sau este nevalid."
+      not_authenticated: "Nu aveți permisiunea de a accesa această pagină. Încercați din nou după conectare."
+      not_found: "Pagina pe care ați solicitat-o nu a putut fi găsită."
+      not_found_return_link: "Întoarceți-vă la {forum}"
+      permission_denied: "Nu aveți permisiunea de a accesa această pagină."
+      unknown: "A apărut o eroare la încercarea de încărcare a acestei pagini."
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
       all_discussions_heading: => core.ref.all_discussions
       next_page_button: => core.ref.next_page
-      previous_page_button: Pagina anterioară
+      previous_page_button: => core.ref.previous_page
 
     # Translations in this namespace are displayed by the Log Out confirmation interface.
     log_out:
@@ -579,52 +579,68 @@ core:
 
     # Translations in this namespace are displayed by the Reset Password interface.
     reset_password:
-      confirm_password_label: => core.ref.confirm_password
-      new_password_label: Parolă nouă
-      submit_button: Resetare parolă
-      title: Reinitializați parola de access
+      confirm_password_label: "Confirmare parolă nouă"
+      new_password_label: "Parolă nouă"
+      submit_button: "Resetare parolă"
+      title: "Reinițializare parolă de access"
+
+  # Translations in this namespace are used in messages output by the API.
+  api:
+    invalid_username_message: "Numele de utilizator poate conține doar litere, cifre, și liniuțe."
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
 
     # These translations are used in emails sent when users register new accounts.
     activate_account:
+      subject: "Activare cont nou"
       body: |
         Salut, {username}!
 
-        Cineva (sperăm că Dvs.!) s-a înscris pe {forum} cu această adresă de e-mail.
+        Această adresă de e-mail a fost utilizată pentru înregistrarea pe {forum}.
 
         Dacă ați fost Dvs., accesați următorul link pentru activarea contului:
         {url}
 
-        Dacă nu, vă rugăm să ignorați acest e-mail.
-      subject: Activare cont
+        Dacă nu ați fost Dvs., vă rugăm să ignorați acest e-mail.
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
+      subject: "Modificare adresă de e-mail"
       body: |
         Salut, {username}!
 
-        Cineva (sperăm că Dvs.!) a schimbat adresa de e-mail asociată contului de pe {forum} cu adresa Dvs.
+        Adresa de e-mail asociată contului de pe {forum} a fost modificată cu adresa Dvs.
 
         Dacă ați fost Dvs., accesați următorul link pentru confirmarea acesteia:
         {url}
 
-        Dacă nu, vă rugăm să ignorați acest e-mail.
-      subject: Modificare adresă de e-mail
+        Dacă nu ați fost Dvs., vă rugăm să ignorați acest e-mail.
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
+      subject: => core.lib.reset_password.title
       body: |
         Salut, {username}!
 
-        Cineva (sperăm că Dvs.!) a solicitat resetarea parolei asociate contului de pe {forum}.
+        A fost solicitată resetarea parolei asociate contului de pe {forum}.
 
         Dacă ați fost Dvs., accesați următorul link pentru resetarea parolei:
         {url}
 
-        Dacă nu, vă rugăm să ignorați acest e-mail și nimic nu se va schimba.
-      subject: Resetare parolă
+        Dacă nu ați fost Dvs., vă rugăm să ignorați acest e-mail.
+
+    # These translations are used when testing mailing configuration
+    send_test:
+      subject: "E-mail de testare Flarum"
+      body: |
+        Salut, {username}!
+
+        Acesta este un e-mail de testare pentru confirmare că configurațiile adresei de e-mail funcționează corect.
+        
+        Dacă ați fost Dvs., aceasta înseamnă că configurațiile Dvs. funcționează!
+        
+        Dacă nu ați fost Dvs., vă rugăm să ignorați acest e-mail.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -632,11 +648,14 @@ core:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
+    all_discussions: "Toate discuțiile"
     change_email: "Modificare adresă e-mail"
     change_password: "Modificare parolă"
+    color: "Culoare"                                 # Referenced by flarum-tags.yml
     confirmation_email_sent: "Către {email} a fost trimis un mesaj de confirmare. Dacă nu ajunge în curând, vă rugăm să verificați dosarul de Spam."
     delete: "Ștergere"
     delete_forever: "Ștergere definitivă"
+    discussions: "Discuții"                          # Referenced by flarum-statistics.yml
     edit: "Editare"
     edit_user: "Editare utilizator"
     email: "E-mail"
@@ -645,27 +664,23 @@ core:
     log_in: "Conectare"
     log_out: "Deconectare"
     mark_all_as_read: "Marcare toate ca citite"
-    next_page: Pagina următoare
+    next_page: "Pagina următoare"
     notifications: "Notificări"
-    okay: "OK"                               # Referenced by flarum-flags.yml, flarum-suspend.yml, flarum-tags.yml
+    okay: "OK"                                       # Referenced by flarum-flags.yml, flarum-suspend.yml, flarum-tags.yml
     password: "Parolă"
-    posts: Postări
-    reply: "Răspunde"                              # Referenced by flarum-mentions.yml
+    posts: "Postări"                                 # Referenced by flarum-statistics.yml
+    previous_page: "Pagina anterioară"
+    reply: "Răspunde"                                # Referenced by flarum-mentions.yml
     restore: "Restabilire"
+    save_changes: "Salvare"                          # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: "Setări"
     sign_up: "Înregistrare"
-    save_changes: "Salvare"
-    some_others: "{count} altul|{count} altele"  # Referenced by flarum-likes.yml, flarum-mentions.yml
-    username: "Nume utilizator"
-    users: "Utilizatori"
-    write_a_reply: "Scrieți un răspuns…"
-    you: Dvs.                             # Referenced by flarum-likes.yml, flarum-mentions.yml
-
-    # More modificable visual elements
-    all_discussions: "Toate discuțiile"
-    discussions: "Discuții"
+    some_others: "{count, plural, one {# altul} other {# altele}}"  # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: "Discuție nouă"
-    view_discussions_label: Vizualizarea discuțiilor
+    username: "Nume utilizator"
+    users: "Utilizatori"                             # Referenced by flarum-statistics.yml
+    write_a_reply: "Scrieți un răspuns…"
+    you: "Dvs."                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
   # GROUP NAMES - These keys are translated at the back end.
@@ -673,11 +688,11 @@ core:
 
   # Translations in this namespace are used to translate default group names.
   group:
-    admin: Administrator
-    admins: Administratori
-    guest: Invitat
-    guests: Invitați
-    member: Membru
-    members: Membri
-    mod: Moderator
-    mods: Moderatori
+    admin: "Administrator"
+    admins: "Administratori"
+    guest: "Oaspete"
+    guests: "Oaspeți"
+    member: "Membru"
+    members: "Membri"
+    mod: "Moderator"
+    mods: "Moderatori"

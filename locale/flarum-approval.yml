@@ -9,25 +9,24 @@ flarum-approval:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      start_discussions_without_approval_label: => flarum-approval.ref.start_discussions_without_approval_label
-      approve_posts_label: Aprobarea postărilor
-      reply_without_approval_label: Răspunderea fără aprobare
+      approve_posts_label: "Aprobarea postărilor"
+      reply_without_approval_label: "Răspunderea fără aprobare"
+      start_discussions_without_approval_label: "Inițierea discuțiilor fără aprobare"
 
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are displayed as tooltips for discussion badges.
     badge:
-      awaiting_approval_tooltip: Se așteaptă aprobarea
+      awaiting_approval_tooltip: => flarum-approval.ref.awaiting_approval
 
     # These translations are displayed in the post header.
     post:
-      awaiting_approval_text: Se așteaptă aprobarea
+      awaiting_approval_text: => flarum-approval.ref.awaiting_approval
 
     # These translations are used by the post control buttons.
     post_controls:
-      approve_button: Aprobare
+      approve_button: "Aprobare"
 
   ref:
-    # More modificable visual elements
-    start_discussions_without_approval_label: Inițierea discuțiilor fără aprobare
+    awaiting_approval: "Se așteaptă aprobarea"

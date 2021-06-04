@@ -5,7 +5,8 @@
     "keywords": [
         "flarum",
         "locale",
-        "romanian"
+        "romanian",
+        "language"
     ],
     "license": "MIT",
     "authors": [{

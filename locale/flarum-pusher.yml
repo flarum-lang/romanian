@@ -9,19 +9,15 @@ flarum-pusher:
 
     # These translations are used in the Pusher Settings modal dialog.
     pusher_settings:
-      app_cluster_label: Cluster
-      app_id_label: Identificator aplicație
-      app_key_label: Cheie aplicație
-      app_secret_label: Cheie secretă aplicație
-      title: Setări Pusher
+      app_cluster_label: "Cluster"
+      app_id_label: "ID aplicație"
+      app_key_label: "Cheie aplicație"
+      app_secret_label: "Cheie secretă aplicație"
+      title: "Setări"
 
   # Translations in this namespace are used by the admin interface.
   forum:
 
     # These translations are used in the discussion list.
     discussion_list:
-      show_updates_text: => flarum-pusher.ref.show_updates_text
-  
-  ref:
-    # More modificable visual elements
-    show_updates_text: "Afișați {count} discuție actualizată|Afișați {count} discuții actualizate"
+      show_updates_text: "{count, plural, one {Afișare # discuție actualizată} other {Afișare # discuții actualizate}}"

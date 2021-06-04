@@ -7,7 +7,7 @@ Este o extensie de limbă română pentru Flarum.
 Utilizați comanda composer:
 
 ```sh
-composer require block-cat/flarum-ext-romanian *@dev
+composer require block-cat/flarum-ext-romanian
 ```
 
 ## Ștergerea

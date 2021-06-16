@@ -1,5 +1,5 @@
 {
-    "name": "block-cat/flarum-core-romanian",
+    "name": "flarum-lang/romanian",
     "type": "flarum-extension",
     "description": "Romanian language pack for Flarum.",
     "keywords": [

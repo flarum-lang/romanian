@@ -29,6 +29,9 @@
         "flarum-locale": {
             "code": "ro",
             "title": "Română"
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/27531"
         }
     }
 }

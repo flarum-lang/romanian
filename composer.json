@@ -9,6 +9,10 @@
         "language"
     ],
     "license": "MIT",
+    "support": {
+        "source": "https://github.com/flarum-lang/romanian",
+        "forum": "https://discuss.flarum.org/d/27531"
+      },
     "authors": [{
         "name": "BlockCat"
     }],
@@ -29,9 +33,6 @@
         "flarum-locale": {
             "code": "ro",
             "title": "Română"
-        },
-        "flagrow": {
-            "discuss": "https://discuss.flarum.org/d/27531"
         }
     }
 }

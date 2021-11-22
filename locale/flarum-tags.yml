@@ -34,7 +34,7 @@ flarum-tags:
     # These translations are used in the Permissions page of the admin interface.
     permissions:
       allow_edit_tags_label: "Editarea etichetelor"
-      bypass_tag_counts_label: "Eliminarea cerințelor etichetei"
+      bypass_tag_counts_label: "Eliminarea cerinței de etichetare a discuțiilor"
       restrict_by_tag_heading: "Restricționare după etichetă"
       tag_discussions_label: "Etichetarea discuțiilor"
 

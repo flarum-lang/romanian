@@ -115,7 +115,7 @@ core:
     # These translations are used on default extension pages.
     extension:
       configure_scopes: "Configurați domeniile de aplicare"
-      confirm_uninstall: "Dezinstalarea va elimina toate intrările și activele bazei de date legate de extensie. Sunteți sigur că doriți să continuați?"
+      confirm_purge: "Curățirea va elimina toate înscrierile din baza de date și activele legate de extensie. Aceasta nu va dezinstala extensia! Dezinstalarea trebuie făcută prin Composer! Sunteți sigur că doriți să continuați?"
       disabled: "Dezactivat"
       enable_to_see: "Activați extensia pentru a vizualiza și modifica setările."
       enabled: "Activat"
@@ -130,7 +130,11 @@ core:
       no_settings: "Această extensie nu are setări setate."
       open_modal: "Deschide Setările"
       permissions_title: "Permisiuni"
-      uninstall_button: "Dezinstalare"
+      purge_button: "Curățare"
+      readme:
+        button_label: "README"
+        no_readme: "Această extensie nu are setat fișierul README"
+        title: "Documentația {extName}"
 
     # These translations are used in the secondary header.
     header:
@@ -326,9 +330,10 @@ core:
     discussion_list:
       empty_text: "Se pare că nu sunt discuții aici."
       load_more_button: => core.ref.load_more
-      mark_as_read_tooltip: "Marcați ca citit"
       replied_text: "{username} a răspuns {ago}"
       started_text: "{username} a publicat {ago}"
+      total_replies_a11y_label: "{count, plural, one {# răspuns} other {# răspunsuri}}"
+      unread_replies_a11y_label: "{count, plural, one {# răspuns necitit} other {# răspunsuri necitite}}. Marcați {count, plural, one {răspuns ca citit.} other {răspunsuri ca citite.}}"
 
     # These translations are used in the Forgot Password modal dialog.
     forgot_password:
@@ -491,9 +496,17 @@ core:
       alert_message: => core.ref.confirmation_email_sent
       resend_button: "Retrimitere mesajul de confirmare"
       sent_message: "Trimis"
+    
+    welcome_hero:
+      hide: "Ascunde mesajul de bun venit"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
+    debug_button: "Depanare"
+
+    # These translations are used in the Alert component.
+    alert:
+      dismiss_a11y_label: "Închide"
 
     # These translations are displayed as tooltips for discussion badges.
     badge:
@@ -516,6 +529,7 @@ core:
       title: => core.ref.edit_user
       username_heading: => core.ref.username
       username_label: => core.ref.username
+      nothing_available: "Nu aveți permisiunea de a edita acest utilizator."
 
     # These translations are displayed as error messages.
     error:
@@ -526,10 +540,24 @@ core:
       payload_too_large_message: "Datele utile ale cererii au fost prea mari."
       permission_denied_message: "Nu aveți permisiunea de a face acest lucru."
       rate_limit_exceeded_message: "Faceți totul prea rapid. Vă rugăm, încercați din nou peste câteva secunde."
+      render_failed_message: "Ne pare rău, am întâmpinat o eroare la afișarea conținutului. Dacă sunteți utilizator, vă rugăm să incercați din nou mai târziu. Dacă sunteți administrator, aruncați o privire în fișierele de jurnal pentru mai multe informații."
     
     # These translations are used in the loading indicator component.
     loading_indicator:
       accessible_label: => core.ref.loading
+
+    # Translations in this namespace are used to format page meta titles.
+    meta_titles:
+      with_page_title: "{pageNumber, plural, =1 {{pageTitle} - {forumName}} other {{pageTitle}: Pagina # - {forumName}}}"
+      without_page_title: "{pageNumber, plural, =1 {{forumName}} other {Pagina # - {forumName}}}"
+
+    # These translations are used in modals.
+    modal:
+      close: "Închide"
+    
+    # These translations are used in the navigation header.
+    nav:
+      drawer_button: "Deschide panoul de navigare"
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:

@@ -7,6 +7,9 @@ fof-user-directory:
             users_heading: 'Căutați toți utilizatorii după "{query}"'
             field:
                 placeholder: "Căutați toți utilizatorii"
+            kinds:
+                group: "Grup"
+                text: "Text liber"
         page:
             nav: "Utilizatori"
             refresh_tooltip: => core.forum.index.refresh_tooltip

@@ -1,42 +1,6 @@
-// Romanian [ro]
+// source: https://unpkg.com/dayjs@v1.10.4/locale/ro.js
+// see: https://github.com/iamkun/dayjs/blob/v1.10.4/src/locale/ro.js
 
-const locale = {
-  name: 'ro',
-  weekdays: 'duminică_luni_marți_miercuri_joi_vineri_sâmbătă'.split('_'),
-  weekdaysShort: 'dum._lun._mar._mie._joi._vin._sâm.'.split('_'),
-  weekdaysMin: 'Du_Lu_Ma_Mi_Jo_Vi_Sâ'.split('_'),
-  weekdaysParseExact : true,
-  months: 'ianuarie_februarie_martie_aprilie_mai_iunie_iulie_august_septembrie_octombrie_noiembrie_decembrie'.split('_'),
-  monthsShort: 'ian._feb._mar_apr._mai_iun_iul._aug_sep._oct._noi._dec.'.split('_'),
-  monthsParseExact : true,
-  weekStart: 1,
-  formats: {
-    LT: 'HH:mm',
-    LTS: 'HH:mm:ss',
-    L: 'DD.MM.YYYY',
-    LL: 'D MMMM YYYY',
-    LLL: 'D MMMM YYYY HH:mm',
-    LLLL: 'dddd D MMMM YYYY HH:mm'
-  },
-  relativeTime: {
-    future: 'în %s',
-    past: 'acum %s',
-    s: 'câteva secunde',
-    m: 'un minut',
-    mm: '%d minute',
-    h: 'o oră',
-    hh: '%d ore',
-    d: 'o zi',
-    dd: '%d zile',
-    M: 'o lună',
-    MM: '%d luni',
-    y: 'un an',
-    yy: '%d ani'
-  },
-  ordinalParse: /\d{1,2}(ul|e)/,
-  ordinal: function (number) {
-    return number + (number === 1 ? 'ul' : 'a');
-  }
-}
+!function(e,i){"object"==typeof exports&&"undefined"!=typeof module?module.exports=i(require("dayjs")):"function"==typeof define&&define.amd?define(["dayjs"],i):e.dayjs_locale_ro=i(e.dayjs)}(this,function(e){"use strict";e=e&&e.hasOwnProperty("default")?e.default:e;var i={name:"ro",weekdays:"Duminică_Luni_Marți_Miercuri_Joi_Vineri_Sâmbătă".split("_"),weekdaysShort:"Dum_Lun_Mar_Mie_Joi_Vin_Sâm".split("_"),weekdaysMin:"Du_Lu_Ma_Mi_Jo_Vi_Sâ".split("_"),months:"Ianuarie_Februarie_Martie_Aprilie_Mai_Iunie_Iulie_August_Septembrie_Octombrie_Noiembrie_Decembrie".split("_"),monthsShort:"Ian._Febr._Mart._Apr._Mai_Iun._Iul._Aug._Sept._Oct._Nov._Dec.".split("_"),weekStart:1,formats:{LT:"H:mm",LTS:"H:mm:ss",L:"DD.MM.YYYY",LL:"D MMMM YYYY",LLL:"D MMMM YYYY H:mm",LLLL:"dddd, D MMMM YYYY H:mm"},relativeTime:{future:"peste %s",past:"acum %s",s:"câteva secunde",m:"un minut",mm:"%d minute",h:"o oră",hh:"%d ore",d:"o zi",dd:"%d zile",M:"o lună",MM:"%d luni",y:"un an",yy:"%d ani"},ordinal:function(e){return e}};return e.locale(i,null,!0),i});
 
-dayjs.locale(locale, null, false)
+dayjs.locale('ro');

@@ -2,37 +2,37 @@
     "name": "flarum-lang/romanian",
     "type": "flarum-extension",
     "description": "Romanian language pack for Flarum.",
+    "homepage": "https://github.com/flarum-lang/romanian",
     "keywords": [
-        "flarum",
         "locale",
-        "romanian",
-        "language"
+        "flarum",
+        "ro-locale"
     ],
     "license": "MIT",
     "support": {
-        "source": "https://github.com/flarum-lang/romanian",
-        "forum": "https://discuss.flarum.org/d/27531"
-      },
-    "authors": [{
-        "name": "BlockCat"
-    }],
-    "require": {
-        "flarum/core": "^1.2"
+        "issues": "https://github.com/flarum-lang/romanian/issues",
+        "source": "https://github.com/flarum-lang/romanian"
     },
+    "require": {
+        "flarum/core": "^1.4"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "flarum-extension": {
-            "title": "Română",
-            "category": "language",
+            "title": "Romanian",
             "icon": {
                 "image": "icon.svg",
-                "backgroundColor": "#CB0002",
                 "backgroundSize": "cover",
                 "backgroundPosition": "center"
             }
         },
         "flarum-locale": {
             "code": "ro",
-            "title": "Română"
+            "title": "Romanian"
+        },
+        "extiverse": {
+            "discuss": ""
         }
     }
 }

@@ -2,6 +2,22 @@ CHANGELOG
 =========
 
 
+1.2.2 (XXXX-XX-XX)
+------------------
+
+**General changes**:
+
+* Updated Flarum core translations.
+
+
+**Updated translations for extensions**:
+
+* [`flarum/akismet`](https://github.com/flarum/akismet)
+
+
+All changes: [v1.2.1...v1.2.2](https://github.com/flarum-lang/romanian/compare/v1.2.1...v1.2.2).
+
+
 1.2.1 (2022-11-12)
 ------------------
 

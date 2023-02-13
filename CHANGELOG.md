@@ -2,6 +2,17 @@ CHANGELOG
 =========
 
 
+1.2.3 (XXXX-XX-XX)
+------------------
+
+**General changes**:
+
+* Updated Flarum core translations.
+
+
+All changes: [v1.2.2...v1.2.3](https://github.com/flarum-lang/romanian/compare/v1.2.2...v1.2.3).
+
+
 1.2.2 (2022-11-12)
 ------------------
 

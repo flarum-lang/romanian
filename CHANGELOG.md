@@ -10,6 +10,12 @@ CHANGELOG
 * Updated Flarum core translations.
 
 
+**Added support for new extensions**:
+
+* [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache)
+* [`acpl/my-tags`](https://github.com/android-com-pl/my-tags)
+
+
 All changes: [v1.2.2...v1.2.3](https://github.com/flarum-lang/romanian/compare/v1.2.2...v1.2.3).
 
 

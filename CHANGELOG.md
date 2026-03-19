@@ -13,7 +13,15 @@ CHANGELOG
 **Added support for new extensions**:
 
 * [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache)
+* [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab)
 * [`acpl/my-tags`](https://github.com/android-com-pl/my-tags)
+* [`afrux/asirem`](https://github.com/afrux/asirem)
+* [`afrux/forum-stats-widget`](https://github.com/afrux/forum-stats-widget)
+* [`afrux/forum-widgets-core`](https://github.com/afrux/forum-widgets-core)
+* [`afrux/news-widget`](https://github.com/afrux/news-widget)
+* [`afrux/online-users-widget`](https://github.com/afrux/online-users-widget)
+* [`afrux/top-posters-widget`](https://github.com/afrux/top-posters-widget)
+* [`flarum/bbcode`](https://github.com/flarum/bbcode)
 
 
 All changes: [v1.2.2...v1.2.3](https://github.com/flarum-lang/romanian/compare/v1.2.2...v1.2.3).

@@ -21,6 +21,8 @@ CHANGELOG
 * [`afrux/news-widget`](https://github.com/afrux/news-widget)
 * [`afrux/online-users-widget`](https://github.com/afrux/online-users-widget)
 * [`afrux/top-posters-widget`](https://github.com/afrux/top-posters-widget)
+* [`askvortsov/flarum-auto-moderator`](https://github.com/askvortsov1/flarum-automod)
+* [`askvortsov/flarum-categories`](https://github.com/askvortsov1/flarum-categories)
 * [`flarum/bbcode`](https://github.com/flarum/bbcode)
 
 

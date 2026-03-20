@@ -88,7 +88,10 @@ fof-upload:
       description: 'Configurează serviciile de încărcare și preferințele.'
       title: Încarcă
     permissions:
+      delete_uploads_of_others_label: 'Șterge fișierele încărcate de utilizator'
       download_label: 'Descarcă fișiere'
+      upload_shared_label: 'Încarcă fișiere partajate'
+      view_user_uploads_label: 'Vezi fișierele încărcate de utilizator'
     shared-uploads:
       description: 'Încarcă fișiere ce pot fi utilizate de toți utilizatorii forumului.'
       introduction: "Încărcările partajate sunt fișiere ce pot fi folosite de toți utilizatorii forumului. Acestea nu sunt atașate niciunei postări, dar pot fi inserate în postări prin intermediul managerului media.\n\n<strong>Avertisment:</strong> Încărcările partajate nu sunt protejate de permisiuni. Oricine deține URL-ul le poate vizualiza.\n"

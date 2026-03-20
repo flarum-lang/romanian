@@ -88,6 +88,7 @@ fof-upload:
       description: 'Configurează serviciile de încărcare și preferințele.'
       title: Încarcă
     permissions:
+      access_shared_label: 'Accesează fișierele partajate în Manager Media'
       delete_uploads_of_others_label: 'Șterge fișierele încărcate de utilizator'
       download_label: 'Descarcă fișiere'
       upload_shared_label: 'Încarcă fișiere partajate'
@@ -98,3 +99,10 @@ fof-upload:
       no-files: 'Nu au fost încărcate încă fișiere partajate.'
       title: 'Încărcări partajate'
       upload-new-button: 'Încarcă fișier nou'
+    templates:
+      file: 'Șablon implicit pentru descărcarea fișierelor'
+      file_description: "Afișează numele fișierului și câteva informații generale. Descărcările sunt procesate prin PHP, permițând colectarea statisticilor și protecția împotriva hotlink-urilor.\n"
+      image: 'Șablon implicit pentru descărcarea imaginilor'
+      image-preview: 'Șablon complet pentru previzualizarea imaginii'
+      image-preview_description: "Afișează imaginea completă direct în text (in-line). Fără funcție de descărcare, nu sunt colectate statistici, iar protecția împotriva hotlink-urilor este ignorată.\n"
+      image_description: "Afișează o miniatură a imaginii și procesează descărcarea prin PHP. Permite colectarea statisticilor și protecția împotriva hotlink-urilor.\n"

@@ -25,6 +25,7 @@ CHANGELOG
 * [`askvortsov/flarum-categories`](https://github.com/askvortsov1/flarum-categories)
 * [`flarum/bbcode`](https://github.com/flarum/bbcode)
 * [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
+* [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
 
 
 All changes: [v1.2.2...v1.2.3](https://github.com/flarum-lang/romanian/compare/v1.2.2...v1.2.3).

@@ -4,6 +4,12 @@
 
 core:
   admin:
+    advanced:
+      description: 'Configurează setările avansate pentru forumul tău.'
+      maintenance:
+        bisect:
+          begin_button_text: 'Începe bisecția'
+          continue_button_text: 'Continuă bisecția'
     appearance:
       colored_header_label: 'Antet Colorat'
       colors_heading: Culori

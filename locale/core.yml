@@ -16,6 +16,11 @@ core:
         kit_url_label: 'URL Kit'
         preview:
           button: 'Previzualizare pictograme'
+          fa5_fa6_label: 'Aliasuri FA5/FA6'
+          fa7_label: 'Clase FA7'
+          help: 'Verifică configurația FontAwesome. O pictogramă redată înseamnă că acel nivel este disponibil; un pătrat gol înseamnă că nu este încărcat.'
+          label: 'Previzualizare pictogramă'
+          pro_label: 'Doar Pro'
         section_label: 'Pictograme FontAwesome'
         source_cdn: CDN
         source_help: 'Alegeți modul în care sunt încărcate pictogramele FontAwesome. „Local” folosește fonturile incluse, „CDN” le încarcă dintr-un CDN, iar „Kit” utilizează FontAwesome Kits cu pictograme personalizate.'
@@ -53,6 +58,13 @@ core:
         safe_mode_extensions: 'Extensii permise să se încarce în modul de siguranță'
         safe_mode_extensions_override_help: 'Această setare este suprascrisă de cheia <code>safe_mode_extensions</code> din fișierul tău <code>config.php</code>. (<b>{extensions}</b>)'
         section_label: Mentenanță
+      pgsql:
+        search_configuration: 'Configurația de căutare de utilizat'
+      queue:
+        custom_driver: 'Forumul tău utilizează driverul de coadă {driver}, care este furnizat de o extensie.'
+        section_label: Coadă
+        sync_help: 'Pentru o performanță și o experiență de utilizare mai bună, ia în considerare utilizarea driverului de coadă prin baza de date. Află mai multe în documentație.'
+        sync_info: 'Forumul tău utilizează driverul de coadă sincron. Joburile sunt procesate imediat în firul principal de execuție.'
     appearance:
       colored_header_label: 'Antet Colorat'
       colors_heading: Culori

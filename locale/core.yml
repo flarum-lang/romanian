@@ -61,11 +61,50 @@ core:
       pgsql:
         search_configuration: 'Configurația de căutare de utilizat'
       queue:
+        backoff_help: 'Timpul de așteptare înainte de a reîncerca un job eșuat. Valoarea implicită este 0 secunde.'
+        backoff_label: 'Backoff (secunde)'
         custom_driver: 'Forumul tău utilizează driverul de coadă {driver}, care este furnizat de o extensie.'
+        memory_help: 'Memoria maximă pe care o poate utiliza worker-ul de coadă înainte de repornire. Valoarea implicită este 128 MB.'
+        memory_label: 'Limită de memorie (MB)'
+        rest_help: 'Timpul de așteptare între procesarea joburilor. Valoarea implicită este 0 secunde.'
+        rest_label: 'Timp de repaus (secunde)'
+        retries_help: 'Numărul maxim de încercări pentru un job înainte de a fi marcat ca eșuat. Valoarea implicită este 1.'
+        retries_label: 'Reîncercări joburi'
         section_label: Coadă
         sync_help: 'Pentru o performanță și o experiență de utilizare mai bună, ia în considerare utilizarea driverului de coadă prin baza de date. Află mai multe în documentație.'
         sync_info: 'Forumul tău utilizează driverul de coadă sincron. Joburile sunt procesate imediat în firul principal de execuție.'
+        timeout_help: 'Timpul maxim de rulare pentru un singur job înainte de expirare. Valoarea implicită este 60 de secunde.'
+        timeout_label: 'Timpul de expirare a jobului (secunde)'
+      search:
+        driver_heading: 'Driver de căutare: {model}'
+        driver_options:
+          default: 'Căutare implicită în baza de date'
+        driver_text: 'Selectați un driver care să fie utilizat pentru căutarea acestui model.'
+        no_other_drivers: 'Niciun driver de căutare nu este disponibil încă. Instalați o extensie de driver de căutare pentru a-l putea configura.'
+        section_label: 'Drivere de căutare'
+      title: Avansat
+    announcements:
+      about: 'Ultimele noutăți și anunțuri preluate de pe comunitatea oficială Flarum de la adresa discuss.flarum.org.'
+      comments_label: '{count, plural, one {# comentariu} other {# comentarii}}'
+      description: 'Ultimele noutăți și anunțuri de la Echipa Flarum.'
+      empty: 'Nu au fost găsite anunțuri.'
+      hide: 'Ascunde anunțurile'
+      load_error: 'Nu s-au putut încărca anunțurile. Vă rugăm să încercați din nou mai târziu.'
+      read_more: 'Citește mai mult'
+      refresh: 'Actualizează anunțurile'
+      retry: 'Încearcă din nou'
+      show: 'Afișează anunțurile'
+      title: Anunțuri
+      view_all: 'Vezi toate pe discuss.flarum.org'
     appearance:
+      allow_user_color_scheme_label: 'Permite utilizatorilor să își aleagă propria schemă de culori'
+      color_scheme_label: 'Schemă de culori (implicită)'
+      color_schemes:
+        auto_mode_label: 'Preferința sistemului utilizatorului sau cea configurată'
+        dark_hc_mode_label: '=> core.ref.dark_hc_mode_label'
+        dark_mode_label: '=> core.ref.dark_mode_label'
+        light_hc_mode_label: '=> core.ref.light_hc_mode_label'
+        light_mode_label: '=> core.ref.light_mode_label'
       colored_header_label: 'Antet Colorat'
       colors_heading: Culori
       colors_primary_label: 'Culoarea Principală'
@@ -85,13 +124,21 @@ core:
       enter_hex_message: 'Vă rugăm, introduceți un cod hexazecimal de culoare.'
       favicon_heading: Favicon
       favicon_text: 'Încărcați o imagine care va fi afișată ca și pictograma paginii în navigator.'
+      logo_dark_mode_heading: 'Logo pentru modul întunecat'
+      logo_dark_mode_text: 'Încărcați un logo alternativ care să fie afișat atunci când modul întunecat este activat.'
       logo_heading: Logo
       logo_text: 'Încărcați o imagine care va înlocui titlul forumului.'
       title: Aspect
     basics:
       all_discussions_label: '=> core.ref.all_discussions'
+      avatar_driver_heading: 'Avatar utilizator'
+      avatar_driver_options:
+        default: Implicit
+      avatar_driver_text: 'Selectați un driver care să fie utilizat pentru avatarele utilizatorilor atunci când nu este disponibil niciun avatar încărcat de aceștia. În mod implicit, nu va fi afișat niciun avatar atunci când un utilizator nu a încărcat unul.'
       default_language_heading: 'Limba Implicită'
       description: 'Setați titlul, limba și alte setări de bază ale forumului Dvs.'
+      display_name_driver_options:
+        username: 'Nume de utilizator'
       display_name_heading: 'Numele de Afișare'
       display_name_text: 'Selectați driver-ul care trebuie utilizat pentru numele de afișare al utilizatorului. Implicit, este afișat numele utilizatorului.'
       forum_description_heading: 'Descrierea Forumului'
@@ -101,6 +148,14 @@ core:
       home_page_text: 'Alegeți care este prima pagină pe care utilizatorii o vor vedea când vor intra pe forum.'
       show_language_selector_label: 'Afișarea selectorul de limbă'
       slug_driver_heading: 'Driver-ul de slug pentru {model}'
+      slug_driver_options:
+        discussions:
+          default: 'ID cu slug'
+          utf8: 'ID cu slug UTF-8'
+        users:
+          default: 'Nume de utilizator'
+          id: ID
+          id_with_display_name: 'ID cu nume de afișat'
       slug_driver_text: 'Selectați driver-ul pentru slug-ul acestui model.'
       title: 'Setări de bază'
       welcome_banner_heading: 'Mesaj de bun-venit'
@@ -134,6 +189,7 @@ core:
           inactive: Inactiv
           never-run: 'Niciodată executat'
       title: 'Tablou de bord'
+      toggle_advanced_page_button: 'Comută pagina avansată'
       tools_button: Instrumente
     debug-warning:
       detail: "Atunci când modul <code>debug</code> este activ, Flarum își va reconstruii fișierele <code>JavaScript</code> și <code>CSS</code> la fiecare cerere, și ar putea probabil să scurgă și alte informații, cum ar fi secrete ale bazei de date, variabile de mediu, etc.\n\nEste foarte recomandat să dezactivezi <code>debug</code> din fișierul tău <code>config.php</code> în modul producție. Vezi <link>documentația Flarum</link> pentru mai multe informații.\n"
@@ -167,21 +223,37 @@ core:
       description: 'Configurați driver-ul, setările și adresele pe care forumul Dvs. le va folosi pentru a trimite e-mailuri.'
       driver_heading: 'Alegeți un driver de e-mail'
       driver_label: 'Driver de e-mail'
+      format:
+        html_option: HTML
+        multipart_option: 'Multipart (recomandat)'
+        plain_option: 'Text simplu'
+      format_heading: 'Format e-mail de ieșire'
+      format_help: 'Alegeți formatul în care vor fi trimise e-mailurile de ieșire. Opțiunea recomandată este <code>multipart</code>, deoarece aceasta va permite clientului de e-mail al utilizatorului să afișeze cel mai adecvat format.'
       from_label: Expeditor
       mail_encryption_label: Criptare
+      mail_encryption_none_help: 'Fără criptare. Nu este recomandat pentru utilizarea în producție.'
+      mail_encryption_ssl_help: 'Conexiunea este criptată de la început (Implicit TLS). Utilizată de obicei cu portul 465.'
+      mail_encryption_tls_help: 'Conexiunea începe necriptată și face upgrade la TLS (STARTTLS). Utilizată de obicei cu portul 587 sau 25.'
       mail_host_label: Host
       mail_mailgun_domain_label: Domeniu
       mail_mailgun_region_label: Regiune
       mail_mailgun_secret_label: 'Cheie secretă'
       mail_password_label: '=> core.ref.password'
       mail_port_label: Port
+      mail_postmark_message_stream_label: 'Flux de mesaje'
+      mail_postmark_token_label: 'Token server'
+      mail_smtp_verify_peer_help: 'Verificați certificatul SSL al serverului atunci când utilizați criptarea TLS sau SSL. Dezactivați această opțiune numai dacă serverul de mail folosește un certificat auto-semnat (self-signed).'
+      mail_smtp_verify_peer_label: 'Verifică certificatul SSL'
       mail_username_label: '=> core.ref.username'
       mailgun_heading: 'Setări Mailgun'
       not_sending_message: 'Flarum în prezent nu trimite e-mailuri. Acest lucru se poate datora driver-ului selectat sau erorilor în configurația acestuia.'
+      postmark_description: 'Trimiteți e-mailul prin API-ul HTTP al Postmark. Opțional, specificați un flux de mesaje pentru a utiliza un flux care nu este cel implicit.'
+      postmark_heading: 'Setări Postmark'
       send_test_mail_button: Trimitere
       send_test_mail_heading: 'E-mail de testare'
       send_test_mail_success: 'E-mailul de testare a fost trimis cu succes!'
       send_test_mail_text: 'Aceasta va trimite un e-mail utilizând configurația de mai sus către e-mailul Dvs., {email}.'
+      smtp_description: 'Configurați setările conexiunii SMTP. Configurații comune: Portul 587 cu TLS sau Portul 465 cu SSL.'
       smtp_heading: 'Setări SMTP'
       title: '=> core.ref.email'
     extension:
@@ -189,6 +261,7 @@ core:
       abandoned_with_replacement: 'Această extensie a fost înlocuită de {replacement}. Ia în considerare migrarea către pachetul înlocuitor.'
       configure_scopes: 'Configurați domeniile de aplicare'
       confirm_purge: 'Curățirea va elimina toate înscrierile din baza de date și activele legate de extensie. Aceasta nu va dezinstala extensia! Dezinstalarea trebuie făcută prin Composer! Sunteți sigur că doriți să continuați?'
+      database_driver_mismatch: 'Această extensie nu suportă driverul de bază de date configurat.'
       deprecated: Depreciat
       disabled: Dezactivat
       enable_to_see: 'Activați extensia pentru a vizualiza și modifica setările.'
@@ -210,22 +283,48 @@ core:
         no_readme: 'Această extensie nu are setat fișierul README'
         title: 'Documentația {extName}'
       replaced: Înlocuit
+      safe_mode_warning: 'Modul de siguranță este activat în prezent. Extensiile nu sunt pornite, iar setările acestora sunt, prin urmare, inaccesibile.'
+    extensions-health-widget:
+      abandoned_no_replacement: 'Nicio înlocuire disponibilă'
+      abandoned_with_replacement: 'Înlocuit de {replacement}'
+      all_healthy: 'Toate extensiile sunt sănătoase.'
+      section_abandoned_empty: 'Nu au fost găsite probleme.'
+      section_abandoned_heading: 'Necesită atenție'
+      section_abandoned_help: 'Aceste extensii nu mai sunt întreținute sau pot avea probleme de compatibilitate. Luați în considerare actualizarea, înlocuirea sau eliminarea acestora.'
+      section_disabled_empty: 'Toate extensiile sunt activate.'
+      section_disabled_heading: Dezactivat
+      section_disabled_help: 'Aceste extensii sunt instalate, dar nu sunt activate în prezent. Activați-le din pagina lor de setări sau eliminați-le dacă nu mai sunt necesare.'
+      section_suggested_empty: 'Nicio sugestie.'
+      section_suggested_heading: Sugerat
+      section_suggested_help: 'Extensiile Flarum pot adăuga funcții suplimentare opționale prin specificarea altor extensii sau pachete. Acestea pot adăuga mai multe funcții sau integrări.'
+      suggested_by: 'Sugerat de {extension}'
+      title: 'Starea de sănătate a extensiilor'
     header:
       get_help: Ajutor
       log_out_button: '=> core.ref.log_out'
+      search_placeholder: Căutare...
+      search_role_label: Căutare
     loading:
       title: 'Vă rugăm, aștepați…'
+    models:
+      discussions: '=> core.ref.discussions'
+      posts: '=> core.ref.posts'
+      users: '=> core.ref.users'
     nav:
+      advanced_button: '=> core.admin.advanced.title'
+      advanced_title: '=> core.admin.advanced.description'
       appearance_button: '=> core.admin.appearance.title'
       appearance_title: '=> core.admin.appearance.description'
       basics_button: '=> core.admin.basics.title'
       basics_title: '=> core.admin.basics.description'
       categories:
+        analytics: Analize
         authentication: Autentificare
         core: 'Configurări de bază'
         discussion: Discuție
         feature: Caracteristici
         formatting: Formatare
+        infrastructure: Infrastructură
         language: Limbi
         moderation: Moderare
         other: 'Alte extensii'
@@ -261,6 +360,7 @@ core:
       participate_heading: Participare
       post_without_throttle_label: 'Răspunsuri consecutive fără așteptare'
       read_heading: Citire
+      remove_scope_confirmation: 'Sigur doriți să eliminați scopul {scope}?'
       remove_scope_label: 'Elimină domeniul (scopul) pentru {scope}'
       rename_discussions_label: 'Redenumirea discuțiilor'
       reply_to_discussions_label: 'Răspundere la discuții'
@@ -282,8 +382,12 @@ core:
       members_button: '=> core.group.members'
       signup_closed_button: Închisă
       signup_open_button: Deschisă
+    search_source:
+      general:
+        heading: General
     settings:
       saved_message: 'Modificările Dvs. au fost salvate.'
+      select_dropdown_custom_label: Personalizat
       submit_button: '=> core.ref.save_changes'
     upload_image:
       remove_button: '=> core.ref.remove'
@@ -305,6 +409,9 @@ core:
           join_time:
             title: Înregistrat
           user_actions:
+            edit_user:
+              button: '=> core.ref.edit'
+              tooltip: 'Editare {username}'
             title: Acțiuni
           user_id:
             title: ID
@@ -380,6 +487,7 @@ core:
       empty_text: 'Se pare că nu sunt discuții aici.'
       load_more_button: '=> core.ref.load_more'
       replied_text: '{username} a răspuns {ago}'
+      skip_discussion_list_pane: 'Sari peste panoul cu lista de discuții'
       started_text: '{username} a publicat {ago}'
       total_replies_a11y_label: '{count, plural, one {# răspuns} other {# răspunsuri}}'
       unread_replies_a11y_label: '{count, plural, one {# răspuns necitit} other {# răspunsuri necitite}}. Marcați ca necitit/e {count, plural, one {răspuns} other {răspunsuri}} ca citit/e.'
@@ -409,19 +517,28 @@ core:
       mark_all_as_read_confirmation: 'Sigur doriți ca toate discuțiile să fie marcate ca citite?'
       mark_all_as_read_tooltip: '=> core.ref.mark_all_as_read'
       meta_title_text: '=> core.ref.all_discussions'
+      refresh_tooltip: '=> core.ref.refresh'
+      skip_to_main_content: 'Sari la conținutul principal'
       start_discussion_button: '=> core.ref.start_a_discussion'
       toggle_sidenav_dropdown_accessible_label: 'Comutare meniul derulant de navigare'
     index_sort:
       latest_button: 'Cele mai actuale'
+      newest_button: '=> core.ref.newest'
+      oldest_button: '=> core.ref.oldest'
+      relevance_button: '=> core.ref.relevance'
       toggle_dropdown_accessible_label: 'Modificare sortarea listei de discuții'
       top_button: 'Cele mai citite'
     log_in:
       forgot_password_link: 'Ați uitat parola?'
+      invalid_login_message: '=> core.ref.invalid_login_message'
       password_placeholder: '=> core.ref.password'
+      remember_me_label: '=> core.ref.remember_me_label'
       sign_up_text: 'Nu aveți cont? <a>Înregistrare</a>'
       submit_button: '=> core.ref.log_in'
       title: '=> core.ref.log_in'
+      username_or_email_placeholder: '=> core.ref.username_or_email_placeholder'
     notifications:
+      delete_all_confirm: 'Sigur doriți să ștergeți toate notificările? Această acțiune este ireversibilă'
       delete_all_tooltip: 'Șterge toate notificările'
       discussion_renamed_text: '{username} a modificat titlul discuției'
       empty_text: 'Nicio notificare'
@@ -442,6 +559,10 @@ core:
       hide_confirmation: 'Sigur doriți să ștergeți răspunsul?'
       restore_button: '=> core.ref.restore'
       toggle_dropdown_accessible_label: 'Comutare meniul derulant cu opțiunile postării'
+    post_list:
+      empty_text: 'Se pare că nu există nicio postare aici.'
+      in_discussion_text: 'În {discussion}'
+      load_more_button: '=> core.ref.load_more'
     post_scrubber:
       now_link: Acum
       original_post_link: 'Postarea originală'
@@ -453,6 +574,13 @@ core:
       load_more_button: '=> core.ref.load_more'
       reply_placeholder: '=> core.ref.write_a_reply'
       time_lapsed_text: '{period} mai târziu'
+    posts:
+      meta_title_text: 'Rezultatele căutării postărilor'
+      refresh_tooltip: '=> core.ref.refresh'
+    posts_sort:
+      newest_button: '=> core.ref.newest'
+      oldest_button: '=> core.ref.oldest'
+      relevance_button: '=> core.ref.relevance'
     rename_discussion:
       submit_button: '=> core.ref.rename'
       title: 'Redenumirea discuției'
@@ -492,6 +620,16 @@ core:
       account_heading: Cont
       change_email_button: '=> core.ref.change_email'
       change_password_button: '=> core.ref.change_password'
+      color_scheme_heading: 'Schemă de culori'
+      color_schemes:
+        auto_mode_label: 'Preferință sistem'
+        dark_hc_mode_label: '=> core.ref.dark_hc_mode_label'
+        dark_mode_label: '=> core.ref.dark_mode_label'
+        light_hc_mode_label: '=> core.ref.light_hc_mode_label'
+        light_mode_label: '=> core.ref.light_mode_label'
+      device_heading: Dispozitiv
+      haptic_feedback_help: 'Disponibil doar pe dispozitivele mobile acceptate'
+      haptic_feedback_label: 'Activați feedback-ul haptic'
       notification_checkbox_a11y_label_template: 'Primește notificări "{description}" via {method}'
       notifications_heading: '=> core.ref.notifications'
       notify_by_email_heading: '=> core.ref.email'
@@ -574,8 +712,10 @@ core:
       username_label: '=> core.ref.username'
     error:
       circular_dependencies_message: 'S-au detectat dependențe circulare: {extensions}. Se întrerupe operațiunea. Te rugăm să dezactivezi una dintre extensii și să încerci din nou.'
+      db_error_message: 'Interogarea bazei de date a eșuat. Acest lucru poate fi cauzat de o incompatibilitate între o extensie și driver-ul bazei de date.'
       dependent_extensions_message: 'Extensia {extension} nu poate fi dezactivată până când următoarele extensii dependente sunt activate: {extensions}'
       extension_initialiation_failed_message: '{extension} a eșuat să se inițializeze, verifică consola navigatorului pentru mai multe informații.'
+      extension_runtime_failed_message: '{extension} a întâmpinat o eroare în timpul rulării. Verificați consola browserului pentru informații suplimentare.'
       generic_cross_origin_message: 'Hopa! Ceva nu a funcționat corect în timpul unei solicitări între origini (cross-origin). Te rugăm să reîncarci pagina și să încerci din nou.'
       generic_message: 'Hopa! Ceva nu a mers. Vă rugăm, încărcați pagina din nou (F5) și încercați din nou.'
       missing_dependencies_message: 'Extensia {extension} nu poate fi activată până când următoarele dependențe sunt dezactivate: {extensions}'
@@ -584,6 +724,35 @@ core:
       permission_denied_message: 'Nu aveți permisiunea de a face acest lucru.'
       rate_limit_exceeded_message: 'Faceți totul prea rapid. Vă rugăm, încercați din nou peste câteva secunde.'
       render_failed_message: 'Ne pare rău, am întâmpinat o eroare la afișarea conținutului. Dacă sunteți utilizator, vă rugăm să incercați din nou mai târziu. Dacă sunteți administrator, aruncați o privire în fișierele de jurnal pentru mai multe informații.'
+    gambits:
+      discussions:
+        author:
+          hint: 'nume de utilizator sau listă de nume de utilizator separate prin virgulă'
+          key: autor
+        created:
+          hint: '2020-12-31 sau 2020-12-31..2021-09-30'
+          key: creat
+        hidden:
+          key: ascuns
+        unread:
+          key: necitit
+      group_keys:
+        allows: permite
+        has: are
+        is: este
+      posts:
+        discussion:
+          hint: 'ID-ul discuției'
+          key: discuție
+      users:
+        email:
+          hint: example@machine.local
+          key: email
+        group:
+          hint: 'nume de grup la singular sau plural'
+          key: grup
+    input:
+      clear_button: 'Șterge intrarea'
     loading_indicator:
       accessible_label: '=> core.ref.loading'
     meta_titles:
@@ -591,11 +760,41 @@ core:
       without_page_title: '{pageNumber, plural, =1 {{forumName}} other {Pagina # - {forumName}}}'
     modal:
       close: Închide
+    multi_select:
+      placeholder: 'Selectați mai multe opțiuni'
     nav:
       drawer_button: 'Deschide panoul de navigare'
+    notices:
+      bisecting: 'Rularea unui proces de bisectare a extensiilor pentru a determina care extensie cauzează o problemă.'
+      bisecting_continue: 'Continuați bisectarea'
+      maintenance_mode_low: 'Oprit pentru întreținere. Doar administratorii pot accesa forumul.'
+      maintenance_mode_safe: 'Oprit pentru întreținere în modul de siguranță. Doar administratorii pot accesa forumul și nicio extensie nu este încărcată.'
     number_suffix:
       kilo_text: K
       mega_text: M
+    pagination:
+      back_button: 'Pagina anterioară'
+      first_button: 'Mergeți la prima pagină'
+      go_to_page_textbox_a11y_label: 'Mergeți direct la pagina numărul'
+      last_button: 'Mergeți la ultima pagină'
+      next_button: 'Pagina următoare'
+      page_counter: 'Pagina {current} din {total}'
+    search:
+      gambit_minus_button_a11y_label: 'Adăugați un filtru negativ'
+      gambit_plus_button_a11y_label: 'Adăugați un filtru pozitiv'
+      no_results_text: 'Se pare că nu există niciun rezultat aici.'
+      no_search_text: 'Nu ați căutat nimic încă.'
+      options_heading: 'Opțiuni de căutare'
+      placeholder: Căutare...
+      preview_heading: 'Previzualizare căutare'
+      search_clear_button_accessible_label: 'Ștergeți interogarea de căutare'
+      title: Căutare
+    search_source:
+      discussions:
+        all_button: 'Căutați în toate discuțiile după „{query}”'
+        heading: '=> core.ref.discussions'
+      posts:
+        all_button: 'Căutați în toate postările după „{query}”'
     series:
       glue_text: ', '
       three_text: '{first}, {second} și {third}'

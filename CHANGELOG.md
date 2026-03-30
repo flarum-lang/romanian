@@ -24,6 +24,7 @@ CHANGELOG
 * [`askvortsov/flarum-auto-moderator`](https://github.com/askvortsov1/flarum-automod)
 * [`askvortsov/flarum-categories`](https://github.com/askvortsov1/flarum-categories)
 * [`flarum/bbcode`](https://github.com/flarum/bbcode)
+* [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
 * [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
 * [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
 

@@ -14,7 +14,7 @@ This language pack contains Romanian translations for Flarum (compatible with `1
 You can install language pack using [Composer](https://getcomposer.org/):
 
 ```console
-composer require flarum-lang/romanian
+composer require "flarum-lang/romanian:*"
 ```
 
 Then enable extension in admin panel of your Flarum.

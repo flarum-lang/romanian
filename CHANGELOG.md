@@ -2,6 +2,51 @@ CHANGELOG
 =========
 
 
+2.0.0 (XXXX-XX-XX)
+------------------
+
+**General changes**:
+
+* Removed outdated Flarum core translations (version `2.0` or higher is supported).
+* Removed outdated validation translations (version `2.0` or higher is supported).
+
+
+**Added support for new extensions**:
+
+* [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache)
+* [`acpl/my-tags`](https://github.com/android-com-pl/my-tags)
+* [`flarum/bbcode`](https://github.com/flarum/bbcode)
+* [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
+* [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
+
+
+**Updated and/or removed outdated translations for extensions**:
+
+* [`flarum/akismet`](https://github.com/flarum/akismet)
+* [`flarum/approval`](https://github.com/flarum/approval)
+* [`flarum/emoji`](https://github.com/flarum/emoji)
+* [`flarum/flags`](https://github.com/flarum/flags)
+* [`flarum/likes`](https://github.com/flarum/likes)
+* [`flarum/lock`](https://github.com/flarum/lock)
+* [`flarum/mentions`](https://github.com/flarum/mentions)
+* [`flarum/nicknames`](https://github.com/flarum/nicknames)
+* [`flarum/pusher`](https://github.com/flarum/pusher)
+* [`flarum/statistics`](https://github.com/flarum/statistics)
+* [`flarum/sticky`](https://github.com/flarum/sticky)
+* [`flarum/subscriptions`](https://github.com/flarum/subscriptions)
+* [`flarum/suspend`](https://github.com/flarum/suspend)
+* [`flarum/tags`](https://github.com/flarum/tags)
+* [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory)
+
+
+**Removed support for outdated extensions**:
+
+* [`flarum/markdown`](https://github.com/flarum/markdown)
+
+
+All changes: [v1.2.2...v2.0.0](https://github.com/flarum-lang/romanian/compare/v1.2.2...v2.0.0).
+
+
 1.2.2 (2022-11-12)
 ------------------
 

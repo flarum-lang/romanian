@@ -6,7 +6,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/flarum-lang/romanian)](https://packagist.org/packages/flarum-lang/romanian/stats)
 [![Monthly Downloads](https://img.shields.io/packagist/dm/flarum-lang/romanian)](https://packagist.org/packages/flarum-lang/romanian/stats)
 
-This language pack contains Romanian translations for Flarum (compatible with `1.4.0` or newer) and popular extensions. Full list of supported extensions is available below.
+This language pack contains Romanian translations for Flarum (compatible with `2.0.0` or newer) and popular extensions. Full list of supported extensions is available below.
 
 
 ## Installation
@@ -14,7 +14,7 @@ This language pack contains Romanian translations for Flarum (compatible with `1
 You can install language pack using [Composer](https://getcomposer.org/):
 
 ```console
-composer require flarum-lang/romanian
+composer require "flarum-lang/romanian:*"
 ```
 
 Then enable extension in admin panel of your Flarum.

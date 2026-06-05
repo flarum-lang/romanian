@@ -18,6 +18,7 @@ CHANGELOG
 * [`flarum/bbcode`](https://github.com/flarum/bbcode)
 * [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
 * [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
+* [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
 
 
 **Updated and/or removed outdated translations for extensions**:

@@ -122,7 +122,7 @@ core:
       edit_footer_button: '=> core.ref.custom_footer_title'
       edit_header_button: '=> core.ref.custom_header_title'
       enter_hex_message: 'Vă rugăm, introduceți un cod hexazecimal de culoare.'
-      favicon_heading: Favicon
+      favicon_heading: 'Pictogramă de site'
       favicon_text: 'Încărcați o imagine care va fi afișată ca și pictograma paginii în navigator.'
       logo_dark_mode_heading: 'Logo pentru modul întunecat'
       logo_dark_mode_text: 'Încărcați un logo alternativ care să fie afișat atunci când modul întunecat este activat.'

@@ -451,7 +451,7 @@ core:
         unsubscribe_text_plain: 'Dacă doriți să nu mai primiți acest tip de notificare, dezabonați-vă aici: {unsubscribeLink}'
     reset_password:
       body: "Cineva (sperăm că dumneavoastră!) a trimis o cerere de recuperare a parolei pentru contul dumneavoastră de pe {forum}.\n\nDacă ați fost dumneavoastră, faceți clic pe următorul link pentru a vă reseta parola:\n{url}\n\nDacă nu doriți să vă schimbați parola, pur și simplu ignorați acest e-mail și nu se va întâmpla nimic.\n"
-      subject: '=> core.lib.reset_password.title'
+      subject: '=> core.ref.reset_your_password'
     send_test:
       body: "Acesta este un e-mail de test pentru a confirma că setările de e-mail Flarum funcționează corect.\n\nDacă ați fost dumneavoastră, acest e-mail înseamnă că setările funcționează!\n\nDacă nu ați fost dumneavoastră, vă rugăm să ignorați acest e-mail.\n"
       subject: 'E-mail de testare Flarum'

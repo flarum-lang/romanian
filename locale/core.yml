@@ -281,7 +281,7 @@ core:
       subject: 'Modificare adresă de e-mail'
     reset_password:
       body: "Salut, {username}!\n\nA fost solicitată resetarea parolei asociate contului de pe {forum}.\n\nDacă ați fost Dvs., accesați următorul link pentru resetarea parolei:\n{url}\n\nDacă nu ați fost Dvs., vă rugăm să ignorați acest e-mail.\n"
-      subject: '=> core.lib.reset_password.title'
+      subject: '=> core.ref.reset_your_password'
     send_test:
       body: "Salut, {username}!\n\nAcesta este un e-mail de testare pentru confirmare că configurațiile adresei de e-mail funcționează corect.\n\nDacă ați fost Dvs., aceasta înseamnă că configurațiile Dvs. funcționează!\n\nDacă nu ați fost Dvs., vă rugăm să ignorați acest e-mail.\n"
       subject: 'E-mail de testare Flarum'

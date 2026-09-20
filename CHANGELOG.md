@@ -2,6 +2,42 @@ CHANGELOG
 =========
 
 
+2.0.0 (XXXX-XX-XX)
+------------------
+
+**General changes**:
+
+* Updated Flarum core translations (329 added, 19 changed, 11 removed).
+* Updated validation translations (75 removed).
+
+
+**Added support for new extensions**:
+
+* [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache)
+* [`acpl/my-tags`](https://github.com/android-com-pl/my-tags)
+* [`flarum/bbcode`](https://github.com/flarum/bbcode)
+* [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
+* [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
+* [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
+
+
+**Updated translations for extensions**:
+
+* [`flarum/mentions`](https://github.com/flarum/mentions) (2 removed)
+* [`flarum/statistics`](https://github.com/flarum/statistics) (1 removed)
+* [`flarum/subscriptions`](https://github.com/flarum/subscriptions) (1 removed)
+* [`flarum/suspend`](https://github.com/flarum/suspend) (2 removed)
+* [`flarum/tags`](https://github.com/flarum/tags) (4 removed)
+
+
+**Removed support for outdated extensions**:
+
+* [`flarum/markdown`](https://github.com/flarum/markdown)
+
+
+All changes: [v1.2.2...2.0.0](https://github.com/flarum-lang/romanian/compare/v1.2.2...2.0.0).
+
+
 1.2.2 (2022-11-12)
 ------------------
 

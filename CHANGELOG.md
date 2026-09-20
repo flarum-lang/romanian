@@ -7,7 +7,7 @@ CHANGELOG
 
 **General changes**:
 
-* Updated Flarum core translations.
+* Updated Flarum core translations (81 added, 5 changed).
 
 
 **Added support for new extensions**:
@@ -29,7 +29,7 @@ CHANGELOG
 * [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
 
 
-All changes: [v1.2.2...v1.2.3](https://github.com/flarum-lang/romanian/compare/v1.2.2...v1.2.3).
+All changes: [v1.2.2...1.2.3](https://github.com/flarum-lang/romanian/compare/v1.2.2...1.2.3).
 
 
 1.2.2 (2022-11-12)

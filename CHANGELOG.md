@@ -7,8 +7,8 @@ CHANGELOG
 
 **General changes**:
 
-* Removed outdated Flarum core translations (version `2.0` or higher is supported).
-* Removed outdated validation translations (version `2.0` or higher is supported).
+* Updated Flarum core translations (329 added, 19 changed, 11 removed).
+* Updated validation translations (75 removed).
 
 
 **Added support for new extensions**:
@@ -21,23 +21,13 @@ CHANGELOG
 * [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
 
 
-**Updated and/or removed outdated translations for extensions**:
+**Updated translations for extensions**:
 
-* [`flarum/akismet`](https://github.com/flarum/akismet)
-* [`flarum/approval`](https://github.com/flarum/approval)
-* [`flarum/emoji`](https://github.com/flarum/emoji)
-* [`flarum/flags`](https://github.com/flarum/flags)
-* [`flarum/likes`](https://github.com/flarum/likes)
-* [`flarum/lock`](https://github.com/flarum/lock)
-* [`flarum/mentions`](https://github.com/flarum/mentions)
-* [`flarum/nicknames`](https://github.com/flarum/nicknames)
-* [`flarum/pusher`](https://github.com/flarum/pusher)
-* [`flarum/statistics`](https://github.com/flarum/statistics)
-* [`flarum/sticky`](https://github.com/flarum/sticky)
-* [`flarum/subscriptions`](https://github.com/flarum/subscriptions)
-* [`flarum/suspend`](https://github.com/flarum/suspend)
-* [`flarum/tags`](https://github.com/flarum/tags)
-* [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory)
+* [`flarum/mentions`](https://github.com/flarum/mentions) (2 removed)
+* [`flarum/statistics`](https://github.com/flarum/statistics) (1 removed)
+* [`flarum/subscriptions`](https://github.com/flarum/subscriptions) (1 removed)
+* [`flarum/suspend`](https://github.com/flarum/suspend) (2 removed)
+* [`flarum/tags`](https://github.com/flarum/tags) (4 removed)
 
 
 **Removed support for outdated extensions**:
@@ -45,7 +35,7 @@ CHANGELOG
 * [`flarum/markdown`](https://github.com/flarum/markdown)
 
 
-All changes: [v1.2.2...v2.0.0](https://github.com/flarum-lang/romanian/compare/v1.2.2...v2.0.0).
+All changes: [v1.2.2...2.0.0](https://github.com/flarum-lang/romanian/compare/v1.2.2...2.0.0).
 
 
 1.2.2 (2022-11-12)

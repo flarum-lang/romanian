@@ -12,21 +12,21 @@ CHANGELOG
 
 **Added support for new extensions**:
 
-* [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache)
-* [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab)
-* [`acpl/my-tags`](https://github.com/android-com-pl/my-tags)
+* [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache) (100% complete)
+* [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab) (100% complete)
+* [`acpl/my-tags`](https://github.com/android-com-pl/my-tags) (100% complete)
 * [`afrux/asirem`](https://github.com/afrux/asirem)
 * [`afrux/forum-stats-widget`](https://github.com/afrux/forum-stats-widget)
 * [`afrux/forum-widgets-core`](https://github.com/afrux/forum-widgets-core)
 * [`afrux/news-widget`](https://github.com/afrux/news-widget)
 * [`afrux/online-users-widget`](https://github.com/afrux/online-users-widget)
 * [`afrux/top-posters-widget`](https://github.com/afrux/top-posters-widget)
-* [`askvortsov/flarum-auto-moderator`](https://github.com/askvortsov1/flarum-automod)
+* [`askvortsov/flarum-auto-moderator`](https://github.com/askvortsov1/flarum-automod) (100% complete)
 * [`askvortsov/flarum-categories`](https://github.com/askvortsov1/flarum-categories)
-* [`flarum/bbcode`](https://github.com/flarum/bbcode)
-* [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
-* [`fof/upload`](https://github.com/FriendsOfFlarum/upload)
-* [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
+* [`flarum/bbcode`](https://github.com/flarum/bbcode) (100% complete)
+* [`fof/badges`](https://github.com/FriendsOfFlarum/badges) (20% complete)
+* [`fof/upload`](https://github.com/FriendsOfFlarum/upload) (100% complete)
+* [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title) (82% complete)
 
 
 All changes: [v1.2.2...1.2.3](https://github.com/flarum-lang/romanian/compare/v1.2.2...1.2.3).

@@ -2,6 +2,24 @@ CHANGELOG
 =========
 
 
+1.2.4 (XXXX-XX-XX)
+------------------
+
+**General changes**:
+
+* Updated Flarum core translations (14 added).
+
+
+**Added support for new extensions**:
+
+* [`akr/chevereto`](https://github.com/AKR-Developers/flarum-chevereto) (100% complete)
+* [`annonny/flarum-dice`](https://github.com/mizhiyugan529/flarum-dice) (100% complete)
+* [`askvortsov/flarum-rich-text`](https://github.com/askvortsov1/flarum-rich-text) (48% complete)
+
+
+All changes: [1.2.3...1.2.4](https://github.com/flarum-lang/romanian/compare/1.2.3...1.2.4).
+
+
 1.2.3 (2026-09-30)
 ------------------
 

@@ -91,7 +91,10 @@ php flarum cache:clear
 | [`acpl/flarum-lscache`](https://github.com/android-com-pl/flarum-lscache) | [![Translation status](https://weblate.rob006.net/widgets/flarum/ro/acpl-lscache/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/acpl-lscache/ro/) |
 | [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab) | [![Translation status](https://weblate.rob006.net/widgets/flarum/ro/acpl-mobile-tab/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/acpl-mobile-tab/ro/) |
 | [`acpl/my-tags`](https://github.com/android-com-pl/my-tags) | [![Translation status](https://weblate.rob006.net/widgets/flarum/ro/acpl-my-tags/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/acpl-my-tags/ro/) |
+| [`akr/chevereto`](https://github.com/AKR-Developers/flarum-chevereto) | [![Translation status](https://weblate.rob006.net/widgets/flarum/ro/akr-chevereto/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/akr-chevereto/ro/) |
+| [`annonny/flarum-dice`](https://github.com/mizhiyugan529/flarum-dice) | [![Translation status](https://weblate.rob006.net/widgets/flarum/ro/annonny-dice/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/annonny-dice/ro/) |
 | [`askvortsov/flarum-auto-moderator`](https://github.com/askvortsov1/flarum-automod) | [![Translation status](https://weblate.rob006.net/widgets/flarum/ro/askvortsov-auto-moderator/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/askvortsov-auto-moderator/ro/) |
+| [`askvortsov/flarum-rich-text`](https://github.com/askvortsov1/flarum-rich-text) | [![Translation status](https://weblate.rob006.net/widgets/flarum/ro/askvortsov-rich-text/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/askvortsov-rich-text/ro/) |
 | [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title) | [![Translation status](https://weblate.rob006.net/widgets/flarum/ro/huseyinfiliz-sticky-title/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/huseyinfiliz-sticky-title/ro/) |
 
 <!-- various-extensions-list-stop -->

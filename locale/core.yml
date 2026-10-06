@@ -158,7 +158,7 @@ core:
       display_name_heading: 'Numele de Afișare'
       display_name_text: 'Selectați driver-ul care trebuie utilizat pentru numele de afișare al utilizatorului. Implicit, este afișat numele utilizatorului.'
       forum_description_heading: 'Descrierea Forumului'
-      forum_description_text: 'Introduceți o mică descriere a comunității Dvs. Aceasta va apărea în motoarele de căutare.'
+      forum_description_text: 'Introdu o propoziție sau două scurte care descriu forumul tău. Aceasta va apărea în etichetă meta și în motoarele de căutare.'
       forum_title_heading: 'Titlul Forumului'
       home_page_heading: 'Pagină de start'
       home_page_text: 'Alegeți care este prima pagină pe care utilizatorii o vor vedea când vor intra pe forum.'
@@ -399,6 +399,9 @@ core:
       members_button: '=> core.group.members'
       signup_closed_button: Închisă
       signup_open_button: Deschisă
+    queue_widget:
+      pending: 'În așteptare'
+      title: Coadă
     search_source:
       general:
         heading: General

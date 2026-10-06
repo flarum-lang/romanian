@@ -12,6 +12,8 @@ core:
         config_override:
           help: 'Setările FontAwesome sunt configurate în prezent în fișierul tău config.php și nu pot fi modificate aici.'
           label: 'Suprascriere Configurare'
+        forced_style_help: 'Forțează fiecare pictogramă la un stil FontAwesome specific, de exemplu "fa-duotone fa-light" sau "fa-regular". Înlocuiește stilul declarat de nucleu și extensii (pictogramele de brand nu sunt modificate niciodată). Sursa ta de pictograme trebuie să poată furniza stilul: pictogramele incluse sunt FontAwesome Free, care acoperă doar câteva sute de pictograme în afara stilului solid, așa că forțarea altui stil lasă majoritatea pictogramelor goale. Fiecare stil este disponibil cu un CDN sau Kit FontAwesome Pro. Lăsați gol pentru dezactivare.'
+        forced_style_label: 'Stil pictogramă forțat'
         kit_url_help: 'URL-ul scriptului tău FontAwesome Kit (de pe kit.fontawesome.com)'
         kit_url_label: 'URL Kit'
         preview:
@@ -66,6 +68,10 @@ core:
         custom_driver: 'Forumul tău utilizează driverul de coadă {driver}, care este furnizat de o extensie.'
         memory_help: 'Memoria maximă pe care o poate utiliza worker-ul de coadă înainte de repornire. Valoarea implicită este 128 MB.'
         memory_label: 'Limită de memorie (MB)'
+        pause_all_label: 'Pauză pentru toate cozile'
+        pause_help: 'În timpul pauzei, lucrătorii nu preiau noi joburi din cozile afectate — joburile se acumulează până când procesarea este reluată. Joburile care rulează deja nu sunt afectate.'
+        pause_label: 'Pauză procesare coadă'
+        pause_queue_label: 'Pauză pentru coada {queue}'
         rest_help: 'Timpul de așteptare între procesarea joburilor. Valoarea implicită este 0 secunde.'
         rest_label: 'Timp de repaus (secunde)'
         retries_help: 'Numărul maxim de încercări pentru un job înainte de a fi marcat ca eșuat. Valoarea implicită este 1.'
@@ -76,6 +82,8 @@ core:
         timeout_help: 'Timpul maxim de rulare pentru un singur job înainte de expirare. Valoarea implicită este 60 de secunde.'
         timeout_label: 'Timpul de expirare a jobului (secunde)'
       search:
+        cjk_mode_help: 'Activează dacă forumul tău este în principal în chineză, japoneză sau coreeană. Căutarea bazată pe cuvinte a bazei de date nu poate potrivi părți din textul CJK, așa că aceasta comută la o căutare de subșiruri care poate face acest lucru. Este mai lent pe forumurile foarte mari, unde configurarea unui analizor de text complet compatibil CJK la nivelul bazei de date (cum ar fi analizorul ngram din MySQL/MariaDB) este o alternativă mai rapidă.'
+        cjk_mode_label: 'Optimizare căutare pentru limbi CJK'
         driver_heading: 'Driver de căutare: {model}'
         driver_options:
           default: 'Căutare implicită în baza de date'
@@ -128,6 +136,8 @@ core:
       logo_dark_mode_text: 'Încărcați un logo alternativ care să fie afișat atunci când modul întunecat este activat.'
       logo_heading: Logo
       logo_text: 'Încărcați o imagine care va înlocui titlul forumului.'
+      show_theme_selector_help: 'Permite utilizatorilor să comute între schemele de culori disponibile dintr-un control din antet.'
+      show_theme_selector_label: 'Afișare selector temă'
       title: Aspect
     basics:
       abandoned_extensions_heading: 'Extensii abandonate'

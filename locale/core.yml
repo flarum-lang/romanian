@@ -315,6 +315,11 @@ core:
       section_suggested_help: 'Extensiile Flarum pot adăuga funcții suplimentare opționale prin specificarea altor extensii sau pachete. Acestea pot adăuga mai multe funcții sau integrări.'
       suggested_by: 'Sugerat de {extension}'
       title: 'Starea de sănătate a extensiilor'
+    failed_jobs:
+      details: Detalii
+      meta: 'Coadă {queue} · eșuat {time}'
+      none: 'Niciun job eșuat.'
+      title: 'Joburi eșuate'
     header:
       get_help: Ajutor
       log_out_button: '=> core.ref.log_out'
@@ -400,7 +405,10 @@ core:
       signup_closed_button: Închisă
       signup_open_button: Deschisă
     queue_widget:
+      failed: Eșuat
       pending: 'În așteptare'
+      refresh: Actualizare
+      reserved: 'În curs'
       title: Coadă
     search_source:
       general:

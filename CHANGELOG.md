@@ -14,7 +14,9 @@ CHANGELOG
 
 * [`akr/chevereto`](https://github.com/AKR-Developers/flarum-chevereto) (100% complete)
 * [`annonny/flarum-dice`](https://github.com/mizhiyugan529/flarum-dice) (100% complete)
+* [`askvortsov/flarum-help-tags`](https://github.com/askvortsov1/flarum-help-tags) (100% complete)
 * [`askvortsov/flarum-rich-text`](https://github.com/askvortsov1/flarum-rich-text) (48% complete)
+* [`blessing/flarum-oauth-client`](https://github.com/bs-community/flarum-oauth-client) (100% complete)
 
 
 All changes: [1.2.3...1.2.4](https://github.com/flarum-lang/romanian/compare/1.2.3...1.2.4).

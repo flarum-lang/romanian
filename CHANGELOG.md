@@ -7,7 +7,7 @@ CHANGELOG
 
 **General changes**:
 
-* Updated Flarum core translations (11 added).
+* Updated Flarum core translations (21 added).
 
 
 All changes: [2.0.0...2.0.1](https://github.com/flarum-lang/romanian/compare/2.0.0...2.0.1).

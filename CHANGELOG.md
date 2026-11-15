@@ -2,6 +2,17 @@ CHANGELOG
 =========
 
 
+1.2.5 (XXXX-XX-XX)
+------------------
+
+**General changes**:
+
+* Updated Day.js translations.
+
+
+All changes: [1.2.4...1.2.5](https://github.com/flarum-lang/romanian/compare/1.2.4...1.2.5).
+
+
 1.2.4 (2026-10-12)
 ------------------
 

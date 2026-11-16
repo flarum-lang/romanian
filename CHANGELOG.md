@@ -10,6 +10,11 @@ CHANGELOG
 * Updated Day.js translations.
 
 
+**Updated translations for extensions**:
+
+* [`askvortsov/flarum-rich-text`](https://github.com/askvortsov1/flarum-rich-text) (16 added, 100% complete)
+
+
 All changes: [1.2.4...1.2.5](https://github.com/flarum-lang/romanian/compare/1.2.4...1.2.5).
 
 

@@ -6,6 +6,11 @@ askvortsov-rich-text:
   admin:
     settings:
       toggle_on_editor: 'Afișează comutatorul pentru modul text îmbunătățit pe editor?'
+  forum:
+    settings:
+      composer_heading: Editor
+      rich_text_compact_paragraphs_label: 'Nu separați paragrafele printr-o linie nouă.'
+      use_rich_text_editor_label: 'Folosiți editorul de text îmbogățit?'
   lib:
     composer:
       additional_items_tooltip: 'Controale suplimentare'
@@ -14,6 +19,7 @@ askvortsov-rich-text:
       code_tooltip: 'Cod în linie <{modifierKey}-`>'
       header_tooltip: 'Treci la antetul {level} <shift-{modifierKey}-{level}>'
       horizontal_rule_tooltip: 'Inserează linie orizontală'
+      image_tooltip: 'Adăugați o imagine'
       insert_button: Inserează
       insert_image:
         src_placeholder: Link
@@ -23,4 +29,16 @@ askvortsov-rich-text:
         remove_button: Elimină
         text_placeholder: Text
         title_placeholder: 'Titlu (afișat la trecerea cursorului)'
+      italic_tooltip: 'Text cursiv <{modifierKey}-i>'
+      link_tooltip: 'Adăugați un link'
+      ordered_list_tooltip: 'Listă numerotată <shift-{modifierKey}-9>'
+      paragraph_tooltip: 'Schimbați în paragraf <shift-{modifierKey}-0>'
+      quote_tooltip: 'Inserați un citat <{modifierKey}-q>'
+      spoiler_block_tooltip: 'Bloc spoiler/listă derulantă'
+      spoiler_inline_tooltip: 'Spoiler  <{modifierKey}-;>'
+      strike_tooltip: 'Text tăiat <alt-shift-5>'
+      sub_tooltip: 'Indice <{modifierKey}-,>'
+      sup_tooltip: 'Exponent <{modifierKey}-.>'
+      text_type_tooltip: 'Selectați tipul de text'
       toggle_button: 'Comută în modul text îmbunătățit'
+      unordered_list_tooltip: 'Listă cu marcatori <shift-{modifierKey}-8>'

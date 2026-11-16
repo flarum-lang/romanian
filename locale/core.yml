@@ -26,7 +26,7 @@ core:
         section_label: 'Pictograme FontAwesome'
         source_cdn: CDN
         source_help: 'Alegeți modul în care sunt încărcate pictogramele FontAwesome. „Local” folosește fonturile incluse, „CDN” le încarcă dintr-un CDN, iar „Kit” utilizează FontAwesome Kits cu pictograme personalizate.'
-        source_kit: 'FontAwesome Kit'
+        source_kit: 'Kit FontAwesome'
         source_label: 'Sursă pictograme'
         source_local: 'Local (Inclus)'
       maintenance:
@@ -328,6 +328,7 @@ core:
         cancel_button: Anulați
         confirm_button: Resetați
         title: 'Resetați setările'
+        title_extension: 'Resetați setările {extensionTitle}'
         warning: 'Această acțiune este ireversibilă. Setările de mai jos vor fi șterse definitiv din baza de date și vor reveni la valorile implicite. Datele acestei extensii nu vor fi afectate.'
       safe_mode_warning: 'Modul de siguranță este activat în prezent. Extensiile nu sunt pornite, iar setările acestora sunt, prin urmare, inaccesibile.'
     extensions-health-widget:
@@ -404,6 +405,7 @@ core:
       delete_posts_forever_label: 'Ștergerea definitivă a postărilor'
       delete_posts_label: 'Ștergerea postărilor'
       description: 'Configurați cine și ce poate face.'
+      edit_own_avatar_label: 'Editați propriul avatar'
       edit_posts_label: 'Editarea postărilor'
       edit_users_credentials_label: 'Editarea acreditărilor utilizatorilor'
       edit_users_groups_label: 'Editarea grupurilor utilizatorilor'
@@ -491,6 +493,10 @@ core:
     invalid_username_message: 'Numele de utilizator poate conține doar litere, numere și cratime. Trebuie să conțină cel puțin o literă.'
   email:
     abandoned_extensions:
+      body_intro: 'Următoarele extensii instalate au fost marcate ca abandonate:'
+      body_outro: 'Vă rugăm să examinați aceste extensii și să luați în considerare migrarea către alternative, acolo unde sunt disponibile.'
+      line_no_replacement: '{package} (nicio alternativă disponibilă)'
+      line_with_replacement: '{package} (alternativă sugerată: {replacement})'
       subject: 'Acțiune necesară: s-a(u) detectat extensie(s) abandonată(e)'
     activate_account:
       body: "Cineva (sperăm că dumneavoastră!) s-a înregistrat pe {forum} cu această adresă de e-mail.\n\nDacă ați fost dumneavoastră, pur și simplu faceți clic pe următorul link și contul dumneavoastră va fi activat:\n{url}\n\nDacă nu v-ați înregistrat, vă rugăm să ignorați acest e-mail.\n"
@@ -594,6 +600,7 @@ core:
       session_dropdown_accessible_label: 'Comutare meniul derulant cu opțiunile sesiunii'
       settings_button: '=> core.ref.settings'
       sign_up_link: '=> core.ref.sign_up'
+      theme_switcher_accessible_label: 'Schimbați tema'
     index:
       all_discussions_link: '=> core.ref.all_discussions'
       cannot_start_discussion_button: '=> core.ref.start_a_discussion'
@@ -605,12 +612,14 @@ core:
       start_discussion_button: '=> core.ref.start_a_discussion'
       toggle_sidenav_dropdown_accessible_label: 'Comutare meniul derulant de navigare'
     index_sort:
-      latest_button: 'Cele mai actuale'
+      az_button: '=> core.ref.title_az'
+      latest_button: '=> core.ref.latest'
       newest_button: '=> core.ref.newest'
       oldest_button: '=> core.ref.oldest'
       relevance_button: '=> core.ref.relevance'
       toggle_dropdown_accessible_label: 'Modificare sortarea listei de discuții'
-      top_button: 'Cele mai citite'
+      top_button: '=> core.ref.top'
+      za_button: '=> core.ref.title_za'
     log_in:
       forgot_password_link: 'Ați uitat parola?'
       invalid_login_message: '=> core.ref.invalid_login_message'
@@ -619,6 +628,7 @@ core:
       sign_up_text: 'Nu aveți cont? <a>Înregistrare</a>'
       submit_button: '=> core.ref.log_in'
       title: '=> core.ref.log_in'
+      too_many_attempts_message: '=> core.ref.too_many_login_attempts_message'
       username_or_email_placeholder: '=> core.ref.username_or_email_placeholder'
     notifications:
       delete_all_confirm: 'Sigur doriți să ștergeți toate notificările? Această acțiune este ireversibilă'
@@ -720,6 +730,7 @@ core:
       notify_discussion_renamed_label: 'Cineva redenumește o discuție inițiată de mine'
       privacy_disclose_online_label: 'Permieți altora să vadă când sunt conectat(ă)'
       privacy_heading: Confidențialitate
+      reset_notifications_button: 'Resetați la valorile implicite'
       title: '=> core.ref.settings'
     sign_up:
       dismiss_button: '=> core.ref.okay'
@@ -769,6 +780,9 @@ core:
   lib:
     alert:
       dismiss_a11y_label: Închide
+    assets_updated:
+      message: 'Este disponibilă o versiune mai nouă a acestei pagini.'
+      reload_button: Reîncărcați
     badge:
       hidden_tooltip: Ascuns
     connection_restored_message: 'Conexiunea a fost restabilită.'
@@ -839,6 +853,16 @@ core:
         group:
           hint: 'nume de grup la singular sau plural'
           key: grup
+    group_selector:
+      placeholder: 'Alegeți un grup'
+    index_sort:
+      az_button: '=> core.ref.title_az'
+      latest_button: '=> core.ref.latest'
+      newest_button: '=> core.ref.newest'
+      oldest_button: '=> core.ref.oldest'
+      relevance_button: '=> core.ref.relevance'
+      top_button: '=> core.ref.top'
+      za_button: '=> core.ref.title_za'
     input:
       clear_button: 'Șterge intrarea'
     loading_indicator:
@@ -852,6 +876,7 @@ core:
       placeholder: 'Selectați mai multe opțiuni'
     nav:
       drawer_button: 'Deschide panoul de navigare'
+      pin_pane_button: 'Fixați lista de discuții'
     notices:
       bisecting: 'Rularea unui proces de bisectare a extensiilor pentru a determina care extensie cauzează o problemă.'
       bisecting_continue: 'Continuați bisectarea'
@@ -860,6 +885,8 @@ core:
     number_suffix:
       kilo_text: K
       mega_text: M
+    overflowing_list:
+      toggle_accessible_label: 'Mai multe elemente'
     pagination:
       back_button: 'Pagina anterioară'
       first_button: 'Mergeți la prima pagină'
@@ -875,6 +902,7 @@ core:
       options_heading: 'Opțiuni de căutare'
       placeholder: Căutare...
       preview_heading: 'Previzualizare căutare'
+      search_active_button_accessible_label: 'Schimbați căutarea: {query}'
       search_clear_button_accessible_label: 'Ștergeți interogarea de căutare'
       title: Căutare
     search_source:
@@ -923,6 +951,7 @@ core:
     icon: Iconiță
     icon_text: 'Introduceți numele oricărei clase de pictograme <a>FontAwesome</a>, <em>inclusiv</em> prefixul (de ex. <code>fas fa-flag</code> sau <code>fa-solid fa-flag</code>).'
     invalid_login_message: 'Datele dumneavoastră de autentificare au fost incorecte.'
+    latest: 'Cele mai recente'
     light_hc_mode_label: 'Modul luminos cu contrast ridicat'
     light_mode_label: 'Modul luminos'
     load_more: 'Încarcă Mai Multe'
@@ -955,6 +984,10 @@ core:
     sign_up: Înregistrare
     some_others: '{count, plural, one {# altul} other {# altele}}'
     start_a_discussion: 'Discuție nouă'
+    title_az: 'Titlu (A–Z)'
+    title_za: 'Titlu (Z-A)'
+    too_many_login_attempts_message: 'Prea multe încercări eșuate de autentificare. Vă rugăm să așteptați câteva minute, apoi încercați din nou.'
+    top: Populare
     username: 'Nume utilizator'
     username_or_email_placeholder: 'Nume utilizator sau E-mail'
     users: Utilizatori
@@ -1010,6 +1043,7 @@ core:
       remember_me_label: '=> core.ref.remember_me_label'
       submit_button: '=> core.ref.log_in'
       title: '=> core.ref.log_in'
+      too_many_attempts_message: '=> core.ref.too_many_login_attempts_message'
       username_or_email_placeholder: '=> core.ref.username_or_email_placeholder'
     log_out:
       log_out_button: '=> core.ref.log_out'

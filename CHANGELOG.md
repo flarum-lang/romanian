@@ -2,6 +2,18 @@ CHANGELOG
 =========
 
 
+2.0.2 (XXXX-XX-XX)
+------------------
+
+**General changes**:
+
+* Updated Flarum core translations (59 added, 3 changed).
+* Updated Day.js translations.
+
+
+All changes: [2.0.1...2.0.2](https://github.com/flarum-lang/romanian/compare/2.0.1...2.0.2).
+
+
 2.0.1 (2026-10-12)
 ------------------
 

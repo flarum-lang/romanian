@@ -1,42 +1,40 @@
 {
-    "name": "flarum-lang/romanian",
-    "type": "flarum-extension",
-    "description": "Romanian language pack for Flarum.",
-    "homepage": "https://github.com/flarum-lang/romanian",
-    "keywords": [
-        "locale",
-        "flarum",
-        "ro-locale"
-    ],
-    "license": "MIT",
-    "support": {
-        "issues": "https://github.com/flarum-lang/romanian/issues",
-        "source": "https://github.com/flarum-lang/romanian"
-    },
-    "require": {
-        "flarum/core": "^2.0"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "extra": {
-        "flarum-extension": {
-            "title": "Romanian",
+	"name": "flarum-lang/romanian",
+	"description": "Romanian Language Pack for Flarum",
+	"type": "flarum-extension",
+	"keywords": [
+		"flarum-locale"
+	],
+	"homepage": "https://github.com/flarum-lang/romanian",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "iorGian",
+			"homepage": "https://github.com/iorGian",
+			"role": "Maintainer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/flarum-lang/romanian/issues",
+		"forum": "https://discuss.flarum.org/d/27531",
+		"source": "https://github.com/flarum-lang/romanian"
+	},
+	"require": {
+		"flarum/core": "^2.0"
+	},
+	"extra": {
+		"flarum-extension": {
+			"title": "Romanian",
 			"category": "language",
-            "icon": {
-                "image": "icon.svg",
-                "backgroundSize": "cover",
-                "backgroundPosition": "center"
-            }
-        },
-        "flarum-locale": {
-            "code": "ro",
-            "title": "Romanian"
-        },
-        "extiverse": {
-            "discuss": ""
-        },
-        "branch-alias": {
-            "dev-main": "1.x-dev"
-        }
-    }
+			"icon": {
+				"image": "icon.svg",
+				"backgroundSize": "cover",
+				"backgroundPosition": "center"
+			}
+		},
+		"flarum-locale": {
+			"code": "ro",
+			"title": "Română"
+		}
+	}
 }
